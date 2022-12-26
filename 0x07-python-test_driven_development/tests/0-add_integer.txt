@@ -1,0 +1,67 @@
+>>> add_integer = __import__('0-add_integer').add_integer
+
+Tests for evaluation:
+
+Test 1:
+>>> add_integer(0, 0)
+0
+
+Test 2:
+>>> add_integer(2, -2)
+0
+
+Test 3:
+>>> add_integer(-4, 3)
+-1
+
+Test 4:
+>>> add_integer(2)
+100
+
+Test 5: test with no arguments
+>>> add_integer()
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+Test 6: testing null variable for a
+>>> add_integer(None, 2)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+Test 7: testing null variable for b
+>>> add_integer(2, None)
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+Test 8: testing null variable for both a and b
+>>> add_integer(None, None)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+Test 9: more than 2 arguments
+>>> add_integer(2, 3, 1)
+Traceback (most recent call last):
+...
+TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+Test 10: using infinity
+>>> add_integer(float('inf'), 20)
+Traceback (most recent call last):
+...
+OverflowError: cannot convert float infinity to integer
+
+Test 11: using NaN
+>>> add_integer(float('NaN'), 25)
+Traceback (most recent call last):
+...
+ValueError: cannot convert float NaN to integer
+
+Test 12: using complex numbers
+>>> add_integer(2j, 76)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
