@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-class that inherites from another class
+class that inherites
 """
 
 
