@@ -11,6 +11,6 @@ def read_file(filename=""):
     Argument:
         filename(str): the file name
     """
-    with open('my_file_0.txt') as f:
+    with open(filename, 'r', encoding='UTF-8') as f:
         for line in f:
             print(f.read(), end='')
