@@ -5,8 +5,9 @@ class that inherites
 
 
 class MyList(list):
-    pass
-
+    """
+    the class that inherits from list
+    """
     def print_sorted(self):
         """
         method to sort the list
