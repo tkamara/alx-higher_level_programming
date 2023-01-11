@@ -1,0 +1,23 @@
+Tests for BaseGeometry:
+
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+Test 1: type of class
+>>> trial = BaseGeometry()
+>>> type(trial) == BaseGeometry
+True
+
+Test 2: area raising exception
+>>> trial.area()
+Traceback (most recent call last):
+...
+Exception: area() is not implemented
+
+Test 3: testing integer validator
+>>> trial.integer_validator("Chebet", 23)
+
+Test 4: checking if integer validator raises exceptions
+>>> trial.integer_validator("Chebet", "Kamara")
+Traceback (most recent call last):
+...
+TypeError: Chebet must be an integer
