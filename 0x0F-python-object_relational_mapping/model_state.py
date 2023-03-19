@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-
-# contains class definition of state
-# making use of SQLAlchemy
+"""
+contains class definition of state
+making use of SQLAlchemy
+"""
 
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
