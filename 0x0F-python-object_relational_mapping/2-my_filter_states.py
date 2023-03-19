@@ -1,13 +1,15 @@
 #!/usr/bin/python3
+"""
+Displays all values that match the argument
+"""
 
-# Displays all values that match the argument
 
 import MySQLdb
 import sys
 
 if __name__ == "__main__":
     """
-    Listing states beginning with N
+    Listing states that match the argument
     """
     db = MySQLdb.connect(host="localhost", user=sys.argv[1], port=3306,
                          passwd=sys.argv[2], db=sys.argv[3])

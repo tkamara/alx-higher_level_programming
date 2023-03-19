@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+"""
+Listing state dependent on argument
+"""
 
-# Listing state dependent on argument
 
 import MySQLdb
 import sys

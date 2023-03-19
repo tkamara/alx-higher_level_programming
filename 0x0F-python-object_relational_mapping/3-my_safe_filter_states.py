@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+"""
+improving #2 to be safe from SQL injections
+"""
 
-# improving #2 to be safe from SQL injections
 
 import MySQLdb
 import sys
